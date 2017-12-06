@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen:700|Roboto:400,500');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Oxygen', 'Roboto', sans-serif;
+    color: #49274a;
+    font-size: 16px;
+    background-color: #f4decb;
+}
+
+/* ***WEB SITE NAVIGATION*** */
+
+nav {
+    width: 80%;
+    margin: 40px auto;
+}
+
+.nav {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.nav li {
+    width: 153px;
+    font-size: 1.1rem;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition-property: background-color, color, border-radius;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+}
+
+
+
+.nav a {
+    text-decoration: none;
+    color: #49274a;
+}
+
+.current-page-menu-item {
+    background-color: #49274a;
+    border-radius: 5px;
+    padding: 10px 20px;
+    
+}
+
+.current-page-menu-item a {
+    color: #f8eee7;
+}
+
+/* *** NAVIGATION HOVER EFFECTS *** */
+
+.nav li:hover {
+    background-color: #94618e;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.nav li:hover a {
+    color: #f8eee7;
+}
+
+li.current-page-menu-item:hover {
+    background-color: #49274a;
+}
+
+
+/* *** CONTAINER WITH IMAGES *** */
+
+.container {
+    width: 80%;
+    margin: 40px auto 50px;
+    text-align: center;
+}
+
+.container img {
+    width: 33.33333%;
+    float: left;
+    
+}
+
+/* *** CLEARFIX *** */
+
+.container:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
